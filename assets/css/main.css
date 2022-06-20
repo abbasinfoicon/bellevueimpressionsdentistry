@@ -1616,7 +1616,7 @@ a.meanmenu-reveal {
 .form-control {
   border: 1px solid #e2e5e7;
   margin-bottom: 20px;
-  padding: 28px 20px;
+  padding: 24px 20px;
   border-radius: 0px;
   outline: 0 none;
   font-size: 12px;
@@ -2418,6 +2418,8 @@ i[class*=" flaticon-"]:before {
   text-transform: capitalize;
   margin-bottom: 27px;
   letter-spacing: 0.25px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -2463,17 +2465,17 @@ i[class*=" flaticon-"]:before {
 
 .header__top1--left i {
   font-size: 16px;
-  color: var(--white-color);
+  color: #000000;
 }
 
 .header__top1--left span {
-  color: var(--white-color);
+  color: #000000;
   font-size: 14px;
   line-height: 24px;
 }
 
 .header__top1--right i {
-  color: var(--white-color);
+  color: #000000;
   font-size: 16px;
 }
 
@@ -2493,7 +2495,7 @@ i[class*=" flaticon-"]:before {
 }
 
 .header__top1--email span a {
-  color: var(--white-color);
+  color: #000000;
 }
 
 .header__top1--social {
@@ -2509,7 +2511,7 @@ i[class*=" flaticon-"]:before {
   top: 3px;
   width: 1px;
   height: 26px;
-  background-color: #ffc9cc;
+  background-color: #49b3b2;
 }
 
 .header__top1--social a {
@@ -2847,6 +2849,10 @@ i[class*=" flaticon-"]:before {
   position: relative;
 }
 
+.header.home1 .main-menu nav > ul {
+    font-size: 0;
+}
+
 .header.home1 .main-menu nav > ul > li a {
   font-size: 16px;
   display: inline-block;
@@ -2857,8 +2863,13 @@ i[class*=" flaticon-"]:before {
   padding: 16px 14px;
 }
 
+.header.home1 .main-menu nav > ul > li.active a, .header.home1 .main-menu nav > ul > li a:hover {
+    background: #348D8F;
+    color: #fff;
+}
+
 .header.home1 .main-menu nav > ul > li a:hover {
-  color: var(--secd-color);
+  color: #fff;
 }
 
 .header.home1 .main-menu nav ul li ul {
@@ -2921,8 +2932,14 @@ i[class*=" flaticon-"]:before {
   color: #666;
 }
 
-.header.home1 .main-menu nav ul li ul li:hover > a {
-  color: var(--main-color);
+.header.home1 .main-menu nav ul li ul.sub_menu li > a:hover {
+  color: var(--white-color);
+  background: #348d8c;
+}
+
+.header.home1 .main-menu nav ul li ul.sub_menu li > a {
+    background: none;
+    color: #666;
 }
 
 .header.home1 .main-menu nav ul li ul li.sub_menu_li > a {
@@ -3959,12 +3976,11 @@ i[class*=" flaticon-"]:before {
 }
 
 .header.home1 .menu_sticky .main-menu nav > ul > li > a {
-  padding: 26px 14px;
-  color: var(--hover-color);
+  padding: 22px 14px;
 }
 
 .header.home1 .menu_sticky .main-menu nav > ul > li > a:hover {
-  color: var(--main-color);
+  /* color: var(--main-color); */
 }
 
 .header.home2 .menu_sticky .main-menu nav > ul > li > a {
@@ -10542,6 +10558,7 @@ color: #1e2e33;}
 
 .contact_page1__left p {
   padding: 35px 30px;
+  margin-bottom: 0;
 }
 
 @media only screen and (max-width: 319px) {
@@ -10608,7 +10625,7 @@ color: #1e2e33;}
 }
 
 .contact_page1__form button.btn9 {
-  border-radius: 0px;
+  /* border-radius: 0px; */
 }
 
 .pagination ul {
@@ -10851,3 +10868,78 @@ https://www.phpied.com/delay-loading-your-print-css/
 /*==================================================
 ===| Style CSS End
 ===================================================*/
+
+
+.contact_page1__left ul {
+  background-color: #fff;
+  box-shadow: 3px 3px 6px #bfc3cf, -3px -3px 6px #fff;
+  border-radius: 10px;
+  background-image: -webkit-linear-gradient(top left,#eff0f3,#e5e6eb);
+  background-image: linear-gradient(to bottom right,#eff0f3,#e5e6eb);
+  border: none;
+  padding: 25px;
+}
+
+.contact_page1__left ul li {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #358d8f;
+}
+
+.contact_page1__left ul li a {
+  color: inherit;
+}
+
+.contact_page1__left ul li i {}
+
+.contact_page1__left ul li span {
+  display: block;
+  font-size: 15px;
+  color: #000;
+}
+
+.contact_page1__form {
+  background-color: #fff;
+  box-shadow: 3px 3px 6px #bfc3cf, -3px -3px 6px #fff;
+  border-radius: 10px;
+  background-image: -webkit-linear-gradient(top left,#eff0f3,#e5e6eb);
+  background-image: linear-gradient(to bottom right,#eff0f3,#e5e6eb);
+  border: none;
+  padding: 25px;
+}
+
+.contact_page1__form .form-control {
+  background-color: #fcfcfc;
+  border: 1px solid #f3f3f3;
+  -webkit-appearance: none;
+  box-shadow: inset 3px 3px 6px #bfc3cf, inset -3px -3px 6px #ffffff;
+  border-radius: 25px;
+}
+
+.contact_page1__form input:focus {
+  box-shadow: rgb(7 30 84 / 40%) 5px 5px 6px inset, rgb(255 255 255) -5px -5px 6px inset;
+}
+
+.contact_page1__form button {
+  width: auto;
+  border-radius: 20px;
+  border: none;
+  padding: 8px 30px;
+  background: -webkit-gradient(linear,left top,right bottom,from(#eff0f3),to(#e5e6eb));
+  background: -webkit-linear-gradient(top left,#eff0f3,#e5e6eb);
+  background: linear-gradient(to bottom right,#eff0f3,#e5e6eb);
+  color: rgba(7,30,84,.4);
+  font-size: 13px;
+  -webkit-box-shadow: 3px 3px 3px #cecece, -3px -3px 3px #fff;
+  box-shadow: 3px 3px 3px #cecece, -3px -3px 3px #fff;
+  display: inline-block;
+}
+
+.contact_page1__form button:hover {
+  background: -webkit-gradient(linear,left top,right bottom,from(#dddddd),to(#ced0d7));
+    background: -webkit-linear-gradient(top left,#dddddd,#ced0d7);
+    background: linear-gradient(to bottom right,#dddddd,#e5e6eb);
+    color: rgba(7,30,84,.8);
+    -webkit-box-shadow: 3px 3px 3px #adabab, -3px -3px 3px #fff;
+    box-shadow: 3px 3px 3px #adabab, -3px -3px 3px #fff;
+}
