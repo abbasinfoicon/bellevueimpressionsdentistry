@@ -2854,7 +2854,7 @@ i[class*=" flaticon-"]:before {
   line-height: 24px;
   font-weight: 500;
   letter-spacing: 0.75px;
-  padding: 16px 28px 16px 0px;
+  padding: 16px 14px;
 }
 
 .header.home1 .main-menu nav > ul > li a:hover {
@@ -3959,7 +3959,7 @@ i[class*=" flaticon-"]:before {
 }
 
 .header.home1 .menu_sticky .main-menu nav > ul > li > a {
-  padding: 26px 28px 26px 0px;
+  padding: 26px 14px;
   color: var(--hover-color);
 }
 
@@ -4608,7 +4608,7 @@ input[type="email"] {
 .service1__item:hover .btn6 {
   background: var(--main-color);
   border: 1px solid var(--main-color);
-  /* color: var(--gold-color); */
+  color: var(--white-color);
 }
 
 .service1__item:hover .btn6 i {
